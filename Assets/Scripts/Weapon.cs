@@ -17,7 +17,13 @@ public class Weapon : MonoBehaviour
     [SerializeField] Ammo ammoSlot;
     [SerializeField] AmmoType ammoType;
     [SerializeField] TextMeshProUGUI ammoText;
+   
+    [SerializeField] AudioClip gunSound;
+    [SerializeField] AudioClip emptyGunSound;
 
+
+
+    AudioSource audioSource;
     bool canShoot = true;
 
 
@@ -26,7 +32,11 @@ public class Weapon : MonoBehaviour
         canShoot = true;
     }
 
-
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        
+    }
     void Update()
     {
         DisplayAmmo();
@@ -49,11 +59,21 @@ public class Weapon : MonoBehaviour
         {
             PlayMuzzleFlash();
             ProcessRaycast();
+            audioSource.PlayOneShot(gunSound);
             ammoSlot.ReduceCurrentAmmo(ammoType);
+        }
+        else
+        {
+            PlayEmptyGunSound();
         }
         yield return new WaitForSeconds(timeBetweenShots);
         canShoot = true;
         
+    }
+
+    private void PlayEmptyGunSound()
+    {
+        audioSource.PlayOneShot(emptyGunSound);
     }
 
     void PlayMuzzleFlash()

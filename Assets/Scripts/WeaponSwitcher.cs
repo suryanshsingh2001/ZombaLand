@@ -6,9 +6,19 @@ using UnityEngine;
 public class WeaponSwitcher : MonoBehaviour
 {
     [SerializeField] int currentWeapon = 0;
+
+
+    [SerializeField] AudioClip weaponSwitchSound;
+
+
+    AudioSource audioSource;
+
+
+
     
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         SetWeaponActive();
     }
 
@@ -30,6 +40,7 @@ public class WeaponSwitcher : MonoBehaviour
     {
         if(Input.GetAxis("Mouse ScrollWheel") < 0)
         {
+            audioSource.PlayOneShot(weaponSwitchSound);
             if (currentWeapon >= transform.childCount - 1)
             {
                 currentWeapon = 0;
@@ -42,6 +53,7 @@ public class WeaponSwitcher : MonoBehaviour
 
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
+            audioSource.PlayOneShot(weaponSwitchSound);
             if (currentWeapon <= 0) 
             {
                 currentWeapon = transform.childCount - 1;
