@@ -7,10 +7,11 @@ public class EnemyAI : MonoBehaviour
    
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float turnSpeed = 5f;
-
+    
 
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
+    AudioSource audioSource;
     bool isProvoked = false;
 
     EnemyHealth health;
@@ -21,6 +22,8 @@ public class EnemyAI : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         health = GetComponent<EnemyHealth>();
         target = FindObjectOfType<PlayerHealth>().transform;
+        audioSource = GetComponent<AudioSource>();
+       ;
     }
 
 
@@ -54,9 +57,11 @@ public class EnemyAI : MonoBehaviour
     void EngageTarget()
     {
         FaceTarget();
+       
         if (distanceToTarget >= navMeshAgent.stoppingDistance) 
         {
             ChaseTarget();
+
         }
 
         if (distanceToTarget <= navMeshAgent.stoppingDistance) 
@@ -68,13 +73,16 @@ public class EnemyAI : MonoBehaviour
     void AttackTarget()
     {
         GetComponent<Animator>().SetBool("Attack", true);
-        
+       
+
     }
 
     void ChaseTarget()
     {
         GetComponent<Animator>().SetBool("Attack", false);
         GetComponent<Animator>().SetTrigger("Move");
+        
+
         navMeshAgent.SetDestination(target.position);
     }
     void FaceTarget()
@@ -89,5 +97,7 @@ public class EnemyAI : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, chaseRange);
     }
+
+    
 
 }
