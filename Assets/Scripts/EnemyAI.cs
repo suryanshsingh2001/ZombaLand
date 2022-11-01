@@ -7,6 +7,7 @@ public class EnemyAI : MonoBehaviour
    
     [SerializeField] float chaseRange = 5f;
     [SerializeField] float turnSpeed = 5f;
+    [SerializeField] AudioClip walkingSound;
     
 
     NavMeshAgent navMeshAgent;
@@ -81,6 +82,7 @@ public class EnemyAI : MonoBehaviour
     {
         GetComponent<Animator>().SetBool("Attack", false);
         GetComponent<Animator>().SetTrigger("Move");
+        
         
 
         navMeshAgent.SetDestination(target.position);

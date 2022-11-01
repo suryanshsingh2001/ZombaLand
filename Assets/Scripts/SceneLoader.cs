@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Quitting");
+            QuitGame();
+        }
+    }
     //Add more functionalities when you need more levels and main menu
     public void ReloadGame()
     {

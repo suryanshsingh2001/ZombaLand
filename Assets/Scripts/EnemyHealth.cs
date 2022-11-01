@@ -9,6 +9,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] AudioClip deathSound;
     [SerializeField] AudioClip hitSound;
 
+   
     AudioSource audioSource;
 
     bool isDead = false;
@@ -42,5 +43,7 @@ public class EnemyHealth : MonoBehaviour
         isDead = true;
         audioSource.PlayOneShot(deathSound);
         GetComponent<Animator>().SetTrigger("Die");
+       
+        
     }
 }

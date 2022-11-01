@@ -132,6 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseRange: 25
   turnSpeed: 5
+  walkingSound: {fileID: 8300000, guid: 47379e63fa1e78f459cdb10576fc65fb, type: 3}
 --- !u!114 &1533276307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 40
   provokedSound: {fileID: 8300000, guid: 7de3e3c5695d01b47a7f36f41571d39f, type: 3}
+  idleSound: {fileID: 8300000, guid: d4445e941c486354a8b11ff3ae87d379, type: 3}
 --- !u!82 &-2566140579094082919
 AudioSource:
   m_ObjectHideFlags: 0
@@ -195,7 +197,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

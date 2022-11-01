@@ -5,6 +5,7 @@ using UnityEngine;
 public class DeathHandler : MonoBehaviour
 {
     [SerializeField] Canvas gameOverCanvas;
+    
 
 
     private void Start()

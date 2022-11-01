@@ -359,6 +359,9 @@ MonoBehaviour:
   hitEffect: {fileID: 3899961662773751427, guid: 053f3660f6947bb40a745407bb82ec3e, type: 3}
   ammoSlot: {fileID: 0}
   ammoType: 0
+  ammoText: {fileID: 0}
+  gunSound: {fileID: 0}
+  emptyGunSound: {fileID: 0}
 --- !u!1 &5533797060131366698
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,7 +658,7 @@ PrefabInstance:
     - target: {fileID: 113037269559750531, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: dd74aa3da74a9c242b53ff26169ffcde, type: 2}
+      objectReference: {fileID: 2100000, guid: 74765cd3b1dc71f448e61f7815b5f86b, type: 2}
     - target: {fileID: 3350055855090824723, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}
       propertyPath: m_RootOrder
       value: 0

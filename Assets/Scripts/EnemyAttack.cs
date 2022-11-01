@@ -7,6 +7,7 @@ public class EnemyAttack : MonoBehaviour
     PlayerHealth target;
     [SerializeField] float damage = 40f;
     [SerializeField] AudioClip provokedSound;
+    [SerializeField] AudioClip idleSound;
 
     AudioSource audioSource;
 
@@ -23,6 +24,9 @@ public class EnemyAttack : MonoBehaviour
         audioSource.PlayOneShot(provokedSound, 0.2f);
         target.GetComponent<DamageDisplayer>().ShowDamageImpact();
     }
-
+    public void ZombieIdleGrowl()
+    {
+        audioSource.PlayOneShot(idleSound, 0.5f);
+    }
     
 }
