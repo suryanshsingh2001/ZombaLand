@@ -7,10 +7,11 @@ using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] float hitPoints = 100f;
+    [SerializeField] float hitPoints = 400f;
     [SerializeField] TextMeshProUGUI healthBar;
     [SerializeField] AudioClip deathSound;
     [SerializeField] AudioClip hitSound;
+    
 
     AudioSource audioSource;
 
@@ -44,4 +45,9 @@ public class PlayerHealth : MonoBehaviour
 
         }
     }
+    public void GiveHealth()
+    {
+        hitPoints = 400f;
+    }
+
 }

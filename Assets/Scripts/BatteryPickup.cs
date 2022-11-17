@@ -9,12 +9,15 @@ public class BatteryPickup : MonoBehaviour
     [SerializeField] AudioClip batteryPickupSound;
 
 
+    PlayerHealth player;
     AudioSource audioSource;
 
     private void Awake()
     {
         audioSource = GetComponentInParent<AudioSource>();
+        player = FindObjectOfType<PlayerHealth>();
     }
+   
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,6 +26,7 @@ public class BatteryPickup : MonoBehaviour
             Debug.Log("Sounds");
             other.GetComponentInChildren<Flashlight>().RestoreLightAngle(restoreAngle);
             other.GetComponentInChildren<Flashlight>().AddLightIntensity(addIntensity);
+            player.GiveHealth();
             audioSource.PlayOneShot(batteryPickupSound);
             Destroy(gameObject);
         }
