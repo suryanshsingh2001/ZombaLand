@@ -2,7 +2,7 @@
 
 ![TileArt](https://github.com/suryanshsingh2001/ZombaLand/blob/main/Screenshots/TitleArt.png)
 
-[Play Now](https://suryanshsingh2001.itch.io/laser-invader-2d)
+[Play Now](https://suryanshsingh2001.itch.io/zombaland)
 
 ## About
 A First Person Shooter Zombie Survival Game.
