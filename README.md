@@ -8,7 +8,7 @@
 A First Person Shooter Zombie Survival Game.
 
 ## Goal
-Shoot or Sprint your way out in a Zombie infested island to reach a top secret facilty to get to safety.
+Stranded in an inhabited island, with a load of guns and a dying flashlight,you find you are not alone. Escape your way out of this zombie infested island!
 
 ## Controls 
 use WASD or arrow keys to navigate <br>
