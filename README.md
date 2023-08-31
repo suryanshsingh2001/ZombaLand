@@ -5,7 +5,7 @@
 [Play Now](https://suryanshsingh2001.itch.io/zombaland)
 
 ## About ℹ️
-ZombaLand is a thrilling first-person shooter zombie survival game built using Unity. In this game, you find yourself stranded on an inhabited island infested with zombies. Equipped with a variety of guns and a dying flashlight, your goal is to escape the island by fighting off hordes of zombies and finding your way to safety.
+Welcome to ZombaLand, an adrenaline-pumping first-person shooter zombie survival game meticulously crafted with Unity. Get ready to immerse yourself in a heart-pounding experience as you step onto an island overrun by ravenous zombies. Armed with an arsenal of diverse weaponry and a dwindling flashlight, your mission is clear: escape the island by obliterating waves of zombies and charting a path to safety.
 
 ## Gameplay 🎮
 
