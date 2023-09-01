@@ -67,7 +67,7 @@ Please note that these are minimum requirements, and for the best experience, it
 If you encounter any issues while playing ZombaLand or have any feedback or suggestions to improve the game, please reach out to the developer through the following channels:
 
 - Developer: Suryansh Singh
-- Email: [suryanshsingh@example.com](mailto:suryanshsingh@example.com)
+- Email: [ricochetthestoryteller2001@gmail.com](mailto:ricochetthestoryteller2001@gmail.com)
 - Website: [https://suryanshsingh2001.itch.io/zombaland](https://suryanshsingh2001.itch.io/zombaland)
 
 Your feedback is valuable and helps the developer in further enhancing the game for an improved gaming experience.
